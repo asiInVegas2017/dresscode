@@ -3,7 +3,6 @@
 .grid {
 	position: relative;
 	overflow: hidden;
-	max-width: 1300px;
 	margin: 0 auto;
 	padding: 1.5em 0 8em;
 	text-align: center;
@@ -13,6 +12,7 @@
 	user-select: none;
 	-webkit-touch-callout: none;
 	-khtml-user-select: none;
+	height:100% !important;
 }
 
 /* Loader */
@@ -37,10 +37,14 @@
 
 .grid__sizer,
 .grid__item {
-	position: relative;
-	float: left;
+	position: inherit !important;
 	width: 20%;
-	padding: .75em;
+	padding: .75em;    
+	margin: auto;
+}
+
+section div.grid__item {
+	position: inherit;
 }
 
 .no-touch .grid__sizer,
@@ -242,7 +246,7 @@
 	top: 0;
 	right: 0;
 	overflow: hidden;
-	height: 100%;
+	: 100%;
 	padding: 0 1.195em;
 	cursor: pointer;
 	color: #abacae;
