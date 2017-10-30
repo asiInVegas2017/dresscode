@@ -11,7 +11,15 @@ http://flickity.metafizzy.co
 .flickity-viewport {
   overflow: hidden;
   position: relative; 
-  height: 400px !important;
+  height: 415px !important;
+}
+
+@media only screen and (max-width: 500px) {
+    .flickity-viewport {
+	  overflow: hidden;
+	  position: relative; 
+	  height: 210px !important;
+	}
 }
 
 .flickity-slider {
